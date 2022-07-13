@@ -3,7 +3,7 @@
   "name": "YT-Downloader",
   "description": "- بوت تحميل من يوتيوب .",
   "env": {
-    "TOKEN": {
+    "BOT_TOKEN": {
       "description": "Enter bot token Get It From @botfather.",
       "value": ""
   },
