@@ -1,6 +1,8 @@
 import os
 import pyrogram
 import requests
+import asyncio
+from pyrogram import Client,filters,enums
 from time import sleep
 import telebot
 
