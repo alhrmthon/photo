@@ -2,7 +2,7 @@ import os
 import pyrogram
 import requests
 import asyncio
-from pyrogram import Client,filters,enums
+from pyrogram import Client, filters as ay
 from time import sleep
 import telebot
 
