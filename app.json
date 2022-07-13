@@ -1,39 +1,13 @@
 {
-    "name": "أفـــــيـــونا مـــيوزك",
-    "description": "⿻↬───𝑨𝑭𝒀𝑶𝑵𝑨 𝑴𝑼𝑺𝑰𝑪───@XxUxD  🤍🦦قناه السورس",
-    "logo": "https://telegra.ph/file/04e464ee5f240e9854250.jpg",
-    "keywords": [
-        "pytgcalls",
-        "telegram bot",
-        "video stream",
-        "pyrogram"
-    ],
-    "website": "https://t.me/UG_U4 ",
-    "repository": "https://github.com/abdelrahman2512/bot.py",
-    "success_url": "https://t.me/UG_U4",
-    "env": {
-        "BOT_TOKEN": {
-            "description": "قم بوضع توكن البوت الخاص بك هنا",
-            "required": true
-        }
-    },
-    "addons": [],
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        },
-        {
-            "url": "heroku/nodejs"
-        },
-        {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    },
-    "stack": "container"
+  "logo":"https://g.top4top.io/p_23787w6g31.jpg",
+  "name": "YT-Downloader",
+  "description": "- بوت تحميل من يوتيوب .",
+  "env": {
+    "TOKEN": {
+      "description": "Enter bot token Get It From @botfather.",
+      "value": ""
+  },
+  "buildpacks": [{
+    "url": "https://github.com/heroku/heroku-buildpack-python.git"
+  }]
 }
