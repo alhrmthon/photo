@@ -17,7 +17,7 @@ async def start(client, message):
     first = message.from_user.first_name
     bot.send_message(message.chat.id, text=f"<strong>Hi {first} 👋\n- - - - - - - - -\n Welcome to the old picture coloring bot\nBy: @VR_LA</strong>",parse_mode="html")
 @app.message_handler(func=lambda m:True)
-async def start(client, message):
+def start(message):
 	msg = message.text
 	bot.send_message(message.chat.id, text=f"please wait",parse_mode="html")
 	r = requests.post(
