@@ -1,15 +1,21 @@
+import os
+import pyrogram
 import requests
 from time import sleep
 import telebot
 
-bot = telebot.TeleBot(BOT_TOKEN)
+api_id = int(os.environ.get("APP_ID"))
+api_hash = os.environ.get("API_HASH")
+token = os.environ.get("TOKEN")
 
-@bot.message_handler(commands=['start'])
-def start(message):
+app = Client("bot", bot_token=token, api_id = api_id, api_hash = api_hash)
+
+@app.on_message(ay.command("start"))
+async def start(client, message):
     first = message.from_user.first_name
     bot.send_message(message.chat.id, text=f"<strong>Hi {first} 👋\n- - - - - - - - -\n Welcome to the old picture coloring bot\nBy: @VR_LA</strong>",parse_mode="html")
 @bot.message_handler(func=lambda m: True)
-def start(message):
+async def start(client, message):
 	msg = message.text
 	bot.send_message(message.chat.id, text=f"please wait",parse_mode="html")
 	r = requests.post(
